@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f1efe9" />
+  <meta name="description" content="Jamie Chen — interactive portfolio in finance, strategy, software, marketing, and leadership." />
+  <title>Jamie Chen — Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <section class="entry" id="entry" aria-label="Portfolio entrance">
+    <div class="entry-orb-shell">
+      <div class="avatar avatar--entry" data-avatar aria-hidden="true">
+        <div class="avatar-surface"></div>
+        <div class="face">
+          <span class="brow brow--left"></span>
+          <span class="brow brow--right"></span>
+          <span class="eye eye--left"><i></i></span>
+          <span class="eye eye--right"><i></i></span>
+          <span class="mouth"></span>
+          <span class="cheek cheek--left"></span>
+          <span class="cheek cheek--right"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry-copy">
+      <p class="mono-label">JAMIE CHEN / INTERACTIVE PORTFOLIO</p>
+      <h1>My work is<br><em>better explored.</em></h1>
+      <p class="entry-deck">Move around. Hover over projects. The companion reacts to what catches your attention — and every featured piece opens directly into the original Canva portfolio.</p>
+      <div class="entry-actions">
+        <button class="pill pill--dark" id="enter-music" type="button">Enter with music <span>↗</span></button>
+        <button class="pill pill--light" id="enter-muted" type="button">Enter muted</button>
+      </div>
+      <p class="micro">Sound begins only after your choice.</p>
+    </div>
+  </section>
+
+  <main class="site" id="site" aria-hidden="true">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Back to top"><span class="brand-dot"></span> JAMIE CHEN</a>
+      <div class="topbar-center">INTERACTIVE PORTFOLIO / 2026</div>
+      <div class="topbar-actions">
+        <a class="top-link" href="#projects">Projects</a>
+        <a class="top-link" href="#contact">Contact</a>
+        <button class="sound" id="sound" type="button" aria-label="Toggle music">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="mono-label">FINANCE · STRATEGY · SOFTWARE · MARKETING</p>
+        <h2>Pick something<br>that looks <em>interesting.</em></h2>
+        <p class="hero-deck">This is a portfolio first. The avatar is only your guide — the projects are the point.</p>
+        <a class="jump" href="#projects"><span>Explore the work</span><b>↓</b></a>
+      </div>
+
+      <div class="companion-stage" id="companion-stage">
+        <div class="companion-status">
+          <span class="status-dot"></span>
+          <span id="status-text">watching your cursor</span>
+        </div>
+
+        <div class="avatar-wrap" id="avatar-wrap">
+          <div class="avatar" id="avatar" data-avatar aria-label="Interactive portfolio companion">
+            <div class="avatar-surface"></div>
+            <div class="face">
+              <span class="brow brow--left"></span>
+              <span class="brow brow--right"></span>
+              <span class="eye eye--left"><i></i></span>
+              <span class="eye eye--right"><i></i></span>
+              <span class="mouth"></span>
+              <span class="cheek cheek--left"></span>
+              <span class="cheek cheek--right"></span>
+            </div>
+          </div>
+          <div class="avatar-shadow"></div>
+        </div>
+
+        <div class="companion-line">
+          <span>01</span>
+          <p id="companion-copy">Hover a project and I’ll react.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="mono-label">SELECTED WORK / CANVA</p>
+          <h2>Portfolio pieces</h2>
+        </div>
+        <p>Each card opens the original project directly. Hover, focus, or tap through the set.</p>
+      </div>
+
+      <div class="project-list" id="project-list">
+        <a class="project-card project-card--feature" href="https://canva.link/mx9tk5k88jsbgel" target="_blank" rel="noopener" data-expression="proud" data-say="The research-heavy one. Good place to start." data-accent="#725cff">
+          <span class="project-no">01</span>
+          <div class="project-main"><span class="project-type">FINANCE OPERATIONS RESEARCH</span><h3>DECA ICDC Report</h3><p>Customer-driven financial inclusion and CSR strategy, developed as a complete written research project.</p></div>
+          <div class="project-side"><span class="project-tag">RESEARCH</span><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card" href="https://canva.link/vcnjg5nixm8c9pz" target="_blank" rel="noopener" data-expression="excited" data-say="Same strategy — compressed into a presentation." data-accent="#ff7958">
+          <span class="project-no">02</span>
+          <div class="project-main"><span class="project-type">PRESENTATION</span><h3>DECA ICDC Slides</h3><p>The presentation version of the finance research, designed for a faster visual narrative.</p></div>
+          <div class="project-side"><span class="project-tag">DECA</span><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card" href="https://canva.link/t70yi8uq7v8dfm1" target="_blank" rel="noopener" data-expression="focus" data-say="Consulting mode. I get serious for this one." data-accent="#1a9f79">
+          <span class="project-no">03</span>
+          <div class="project-main"><span class="project-type">STRATEGY / CONSULTING</span><h3>Asia Consulting Pitch</h3><p>A structured consulting-style recommendation focused on analysis, framing, and clear decision-making.</p></div>
+          <div class="project-side"><span class="project-tag">STRATEGY</span><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card" href="https://canva.link/6k2btciat5ohitr" target="_blank" rel="noopener" data-expression="curious" data-say="Real estate research gets me curious." data-accent="#d19a2b">
+          <span class="project-no">04</span>
+          <div class="project-main"><span class="project-type">COMMERCIAL REAL ESTATE</span><h3>B3 Investors — Bayfair</h3><p>Research and prospecting work tied to commercial property revitalization and local tenant outreach.</p></div>
+          <div class="project-side"><span class="project-tag">REAL ESTATE</span><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card" href="https://canva.link/wldqghskn356nx7" target="_blank" rel="noopener" data-expression="happy" data-say="Branding project. This one is more playful." data-accent="#eb5ca7">
+          <span class="project-no">05</span>
+          <div class="project-main"><span class="project-type">MARKETING</span><h3>Fusion Marketing</h3><p>Brand, positioning, communication, and visual marketing work built around an audience-first approach.</p></div>
+          <div class="project-side"><span class="project-tag">MARKETING</span><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card" href="https://canva.link/n4cqb38wg15nbdh" target="_blank" rel="noopener" data-expression="wink" data-say="Short pitch. Sharp idea. Tiny wink." data-accent="#4d81f3">
+          <span class="project-no">06</span>
+          <div class="project-main"><span class="project-type">PITCH / STRATEGY</span><h3>Irvington Fusion Pitch</h3><p>A concise pitch built around a school and community opportunity, with strategy shaped for presentation.</p></div>
+          <div class="project-side"><span class="project-tag">PITCH</span><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card" href="https://canva.link/gtpsjl9ljdb9w0p" target="_blank" rel="noopener" data-expression="proud" data-say="A visual recap of work I actually executed." data-accent="#805ad5">
+          <span class="project-no">07</span>
+          <div class="project-main"><span class="project-type">EXPERIENCE RECAP</span><h3>B3 Investors Summary</h3><p>A visual summary of research, prospecting, pipeline organization, and outreach work completed with B3 Investors.</p></div>
+          <div class="project-side"><span class="project-tag">EXPERIENCE</span><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card" href="https://canva.link/50kiakbew7sqf70" target="_blank" rel="noopener" data-expression="surprised" data-say="The personal one. You found the origin story." data-accent="#d56b45">
+          <span class="project-no">08</span>
+          <div class="project-main"><span class="project-type">INTRO DECK</span><h3>Get to Know Jamie</h3><p>A more personal introduction to my interests, background, and the way I think about the work I take on.</p></div>
+          <div class="project-side"><span class="project-tag">ABOUT</span><span class="project-arrow">↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="more" id="more">
+      <div class="section-heading section-heading--compact">
+        <div><p class="mono-label">MORE CONTEXT</p><h2>Beyond the projects</h2></div>
+      </div>
+      <div class="context-grid">
+        <article class="context-card" data-expression="focus" data-say="Finance, strategy, and systems are the through-line.">
+          <span>01 / PROFILE</span><h3>Business + technical</h3><p>I’m most interested in work that sits between markets, strategy, risk, communication, and software.</p>
+        </article>
+        <article class="context-card" data-expression="happy" data-say="Leadership is mostly making the system work better for everyone else.">
+          <span>02 / LEADERSHIP</span><h3>Build the structure</h3><p>I gravitate toward roles where I can improve how a team communicates, executes, and presents its work.</p>
+        </article>
+        <a class="context-card context-card--link" href="https://canva.link/h4nv8c463fl6r59" target="_blank" rel="noopener" data-expression="curious" data-say="Need the fast version? Résumé is right here.">
+          <span>03 / RÉSUMÉ</span><h3>Open the conventional version</h3><p>For a quicker scan of experience, skills, and responsibilities.</p><b>OPEN ↗</b>
+        </a>
+        <a class="context-card context-card--link" href="https://canva.link/xh9246xwx1yc0jm" target="_blank" rel="noopener" data-expression="proud" data-say="More community and team-based work lives here.">
+          <span>04 / LEADERSHIP DECK</span><h3>Open the visual portfolio</h3><p>A separate look at leadership, community involvement, and team execution.</p><b>OPEN ↗</b>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <p class="mono-label">CONTACT / SAY HELLO</p>
+      <h2>If something here made you curious,<br><em>that’s a good reason to talk.</em></h2>
+      <div class="contact-links">
+        <a href="mailto:djamiechen@gmail.com" data-expression="happy" data-say="Email works."><span>Email</span><b>↗</b></a>
+        <a href="https://www.linkedin.com/in/jamiedchen/" target="_blank" rel="noopener" data-expression="proud" data-say="LinkedIn: the polished version."><span>LinkedIn</span><b>↗</b></a>
+        <a href="https://www.instagram.com/djamiechen/" target="_blank" rel="noopener" data-expression="wink" data-say="Instagram: slightly less formal."><span>Instagram</span><b>↗</b></a>
+      </div>
+      <div class="footer-bottom"><span>FREMONT, CA</span><span>DESIGNED TO BE EXPLORED</span><span>© 2026</span></div>
+    </footer>
+  </main>
+
+  <audio id="music" loop preload="auto"><source src="music.mp3" type="audio/mpeg" /></audio>
+  <script src="app.js"></script>
+</body>
+</html>
